@@ -82,5 +82,16 @@ int GetPlayerChoice(){
 }
   
 int main(){
-  std::vector<int> test = CreateBoard();
+  std::vector<int> board = CreateBoard();
+  for(int i = 0; i < 9; i++){
+      DisplayBoard(board);
+      int choice = GetPlayerChoice();
+
+      if(i % 2 == 0){
+          board = PlaceMarker(choice, 1, board);
+      }else{
+          board = PlaceMarker(choice, 2, board);
+      }
+  }
+  DisplayBoard(board);
 }
