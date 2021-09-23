@@ -1,6 +1,17 @@
 #include <vector>
 #include <iostream>
 
+// places a marker
+std::vector<int> PlaceMarker(int a, int p,std::vector<int> b){
+  if (p == 1){
+    b[a] = 1 ;
+  }
+  else{
+    b[a] = 2 ;
+  }
+  return b;
+}
+
 std::vector<int> CreateBoard(){
   std::vector<int> board;
   // output "-" for 0, X for 1, and O for 2
