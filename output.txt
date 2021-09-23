@@ -1,0 +1,95 @@
+   |   |   
+-----------
+   |   |   
+-----------
+   |   |   
+Please input number where you want to play.
+1.Top Left   2.Top Mid   3.Top Right
+4.Mid Left   5.Middle    6.Mid Right
+7.Bot Left   8.Bot Mid   9.Bot Right
+1
+ X |   |   
+-----------
+   |   |   
+-----------
+   |   |   
+Please input number where you want to play.
+1.Top Left   2.Top Mid   3.Top Right
+4.Mid Left   5.Middle    6.Mid Right
+7.Bot Left   8.Bot Mid   9.Bot Right
+2
+ X | O |   
+-----------
+   |   |   
+-----------
+   |   |   
+Please input number where you want to play.
+1.Top Left   2.Top Mid   3.Top Right
+4.Mid Left   5.Middle    6.Mid Right
+7.Bot Left   8.Bot Mid   9.Bot Right
+3
+ X | O | X 
+-----------
+   |   |   
+-----------
+   |   |   
+Please input number where you want to play.
+1.Top Left   2.Top Mid   3.Top Right
+4.Mid Left   5.Middle    6.Mid Right
+7.Bot Left   8.Bot Mid   9.Bot Right
+4
+ X | O | X 
+-----------
+ O |   |   
+-----------
+   |   |   
+Please input number where you want to play.
+1.Top Left   2.Top Mid   3.Top Right
+4.Mid Left   5.Middle    6.Mid Right
+7.Bot Left   8.Bot Mid   9.Bot Right
+5
+ X | O | X 
+-----------
+ O | X |   
+-----------
+   |   |   
+Please input number where you want to play.
+1.Top Left   2.Top Mid   3.Top Right
+4.Mid Left   5.Middle    6.Mid Right
+7.Bot Left   8.Bot Mid   9.Bot Right
+6
+ X | O | X 
+-----------
+ O | X | O 
+-----------
+   |   |   
+Please input number where you want to play.
+1.Top Left   2.Top Mid   3.Top Right
+4.Mid Left   5.Middle    6.Mid Right
+7.Bot Left   8.Bot Mid   9.Bot Right
+7
+ X | O | X 
+-----------
+ O | X | O 
+-----------
+ X |   |   
+Please input number where you want to play.
+1.Top Left   2.Top Mid   3.Top Right
+4.Mid Left   5.Middle    6.Mid Right
+7.Bot Left   8.Bot Mid   9.Bot Right
+8
+ X | O | X 
+-----------
+ O | X | O 
+-----------
+ X | O |   
+Please input number where you want to play.
+1.Top Left   2.Top Mid   3.Top Right
+4.Mid Left   5.Middle    6.Mid Right
+7.Bot Left   8.Bot Mid   9.Bot Right
+9
+ X | O | X 
+-----------
+ O | X | O 
+-----------
+ X | O | X 
