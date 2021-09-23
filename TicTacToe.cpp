@@ -67,6 +67,19 @@ void DisplayBoard(std::vector<int> board){
     }
     std::cout << std::endl;
 }
+
+int GetPlayerChoice(){
+    std::cout << "Please input number where you want to play." << std::endl;
+    std::cout << "1.Top Left   2.Top Mid   3.Top Right" << std::endl;
+    std::cout << "4.Mid Left   5.Middle    6.Mid Right" << std::endl;
+    std::cout << "7.Bot Left   8.Bot Mid   9.Bot Right" << std::endl;
+    
+    std::string choice = "";
+    getline(std::cin, choice);
+
+    int num_choice = stoi(choice) - 1;
+    return num_choice;
+}
   
 int main(){
   std::vector<int> test = CreateBoard();
