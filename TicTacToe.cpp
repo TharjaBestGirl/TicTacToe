@@ -1,69 +1,73 @@
 #include <vector>
 #include <iostream>
 
-//displays board
-void DisplayBoard(std::vector<int> a){
-  for(int i=0;i<3;i++){
-    //if zero output blank
-    if (a[i] == 0){
-      std::cout << " " ;
-    }
-    else{
-      std::cout << a[i];
-    }
-
-    if (i<2){
-      std::cout << "|";
-    }
-    else{
-      std::cout << "  0|1|2" << std::endl;
-    }
+// places a marker
+std::vector<int> PlaceMarker(int a, int p,std::vector<int> b){
+  if (p == 1){
+    b[a] = 1 ;
   }
-  std::cout << "-----  -----" << std::endl;
-  for(int i=3;i<6;i++){
-    //if zero output blank
-    if (a[i] == 0){
-      std::cout << " " ;
-    }
-    else{
-      std::cout << a[i];
-    }
-
-    if (i<5){
-      std::cout << "|";
-    }
-    else{
-      std::cout << "  3|4|5" << std::endl;
-    }
+  else{
+    b[a] = 2 ;
   }
-  std::cout << "-----  -----" << std::endl;
-  for(int i=6;i<9;i++){
-    //if zero output blank
-    if (a[i] == 0){
-      std::cout << " " ;
-    }
-    else{
-      std::cout << a[i];
-    }
-
-    if (i<8){
-      std::cout << "|";
-    }
-    else{
-      std::cout << "  6|7|8" << std::endl;
-    }
-  }
+  return b;
 }
 
 std::vector<int> CreateBoard(){
   std::vector<int> board;
+  // output "-" for 0, X for 1, and O for 2
   for (int i=0; i<9; i++){
     board.push_back(0);
   }
   return board;
 }
 
+void DisplayBoard(std::vector<int> board){
+    for(int i = 0; i < 3; i++){
+        if(board.at(i) == 1){
+            std::cout << " X ";
+        }else if(board.at(i) == 2){
+            std::cout << " O ";
+        }else{
+            std::cout << "   ";
+        }
+
+        if(i != 2){
+            std::cout << "|";
+        }
+    }
+    std::cout << std::endl << "-----------" << std::endl;
+
+    for(int i = 3; i < 6; i++){
+        if(board.at(i) == 1){
+            std::cout << " X ";
+        }else if(board.at(i) == 2){
+            std::cout << " O ";
+        }else{
+            std::cout << "   ";
+        }
+
+        if(i != 5){
+            std::cout << "|";
+        }
+    }
+    std::cout << std::endl << "-----------" << std::endl;
+
+    for(int i = 6; i < 9; i++){
+        if(board.at(i) == 1){
+            std::cout << " X ";
+        }else if(board.at(i) == 2){
+            std::cout << " O ";
+        }else{
+            std::cout << "   ";
+        }
+
+        if(i != 8){
+            std::cout << "|";
+        }
+    }
+    std::cout << std::endl;
+}
+  
 int main(){
   std::vector<int> test = CreateBoard();
-  DisplayBoard(test);
 }
